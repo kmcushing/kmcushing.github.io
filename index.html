@@ -62,43 +62,7 @@
 		filter: brightness(0%);
 	}
 
-	.euchre {
-		width: 234x;
-		height: 265px;
-		display: inline-block;
-		margin: auto;
-		position: relative;
-		cursor: pointer;
-		text-decoration: none;
-		border: 0 !important;
-	}
-
-	.euchre-image {
-		overflow: hidden !important;
-	}
-
-	.euchre:hover .euchre-image {
-		filter: blur(16px);
-	}
-
-	.euchre-text {
-		position: absolute;
-		opacity: 0;
-		top: 50%;
-		left: 50%;
-		text-align: center;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		color: white;
-		font-size: 24px;
-		padding: 1px 1px;
-	}
-
-	.euchre:hover .euchre-text {
-		opacity: 1;
-	}
-
-	.coronavirusAnalytics {
+	/* .coronavirusAnalytics {
 		width: 427px;
 		height: 265px;
 		display: inline-block;
@@ -204,6 +168,42 @@
 
 	.pitcher-prediction:hover .pitcher-prediction-text {
 		opacity: 1;
+	} */
+
+	.golf-1 {
+		width: 279px;
+		height: 265px;
+		display: inline-block;
+		margin: auto;
+		position: relative;
+		/* cursor: pointer; */
+		text-decoration: none;
+		border: 0 !important;
+	}
+
+	.golf-1-image {
+		overflow: hidden !important;
+	}
+
+	.golf-1:hover .golf-1-image {
+		filter: blur(16px);
+	}
+
+	.golf-1-text {
+		position: absolute;
+		opacity: 0;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		color: white;
+		font-size: 24px;
+		padding: 1px 1px;
+	}
+
+	.golf-1:hover .golf-1-text {
+		opacity: 1;
 	}
 
 	.pitching-1 {
@@ -248,7 +248,6 @@
 		display: inline-block;
 		margin: auto;
 		position: relative;
-		cursor: pointer;
 		text-decoration: none;
 		border: 0 !important;
 	}
@@ -259,6 +258,7 @@
 
 	.pitching-2:hover .pitching-2-image {
 		filter: blur(16px);
+		pointer-events: none;
 	}
 
 	.pitching-2-text {
@@ -504,41 +504,149 @@
 		pointer-events: none;
 	}
 
-	.mktx {
-		width: 507px;
-		height: 265px;
-		display: inline-block;
-		margin: auto;
+	.img-group {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+		/* flex-direction: column; */
+		/* height: fit-content; */
+		/* max-height: 800px; */
+	}
+
+	/* .img-group div {
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 300px;
+		max-height: 400px;
+		/* width: fit-content; */
+		/* height: fit-content; */
+		/* max-width: 500px; */
+		/* position: relative; */
+		/* min-height: 200px; */
+		/* margin: 5px; */
+		/* border: 5px solid black; */
+		/* object-fit: scale-down; */
+	/* } */
+
+	.img-group a {
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 300px;
+		max-height: 500px;
+		max-width: 500px;
+		/* display: flex; */
+		overflow: hidden;
+		/* width: fit-content; */
+		/* height: fit-content; */
+		/* max-width: 500px; */
 		position: relative;
-		/* pointer-events: none; */
-		text-decoration: none;
-		border: 0 !important;
+		min-height: 100px;
+		margin: 5px;
+		border: none;
+		/* border: 5px solid black; */
+		/* object-fit: scale-down; */
 	}
 
-	.mktx-image {
-		overflow: hidden !important;
+	.img-group img {
+		/* height: 300px;	 */
+		height: 100%;
+		width: 100%;
+		max-width: 500 px;
+		/* object-fit: cover; */
+		/* object-fit: contain; */
+		cursor: pointer;
+		/* object-fit: fill; */
+		aspect-ratio: 1 / 1;
+		/* aspect-ratio: auto; */
+		/* border: 3px solid green; */
+		border: none;
 	}
 
-	.mktx:hover .mktx-image {
-		filter: blur(16px);
-	}
-
-	.mktx-text {
+	.img-group a > p {
 		position: absolute;
+		/* position: relative; */
 		opacity: 0;
 		top: 50%;
 		left: 50%;
 		text-align: center;
+		text-overflow: wrap;
 		transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
-		color: black;
+		color: white;
 		font-size: 24px;
-		padding: 1px 1px;
+		/* padding: 1px 1px; */
 	}
 
-	.mktx:hover .mktx-text {
+	/* .euchre {
+	} */
+
+	/* .euchre-image {
+		overflow: hidden !important;
+	} */
+
+	/* may be unnecessary but could change based on browser */
+	.factchecker {
+		cursor: default;
+	}
+
+	.factchecker:hover .factchecker-image {
+		filter: blur(16px);
+		cursor: default;
+	}
+
+	.factchecker:hover .factchecker-text {
+		opacity: 1;
+		color: black;
+		cursor: default;
+	}
+
+	/* .backgammon {
+		cursor: pointer;
+	} */
+
+	.backgammon:hover .backgammon-image {
+		filter: blur(16px);
+	}
+
+	.backgammon:hover .backgammon-text {
 		opacity: 1;
 	}
+
+	.pitcher-modeling:hover .pitcher-modeling-image {
+		filter: blur(16px);
+	}
+
+	.pitcher-modeling:hover .pitcher-modeling-text {
+		opacity: 1;
+	}
+
+	.euchre:hover .euchre-image {
+		filter: blur(16px);
+	}
+
+	.euchre:hover .euchre-text {
+		opacity: 1;
+	}
+
+	.covid:hover .covid-image {
+		filter: blur(16px);
+	}
+
+	.covid:hover .covid-text {
+		opacity: 1;
+		color: black;
+	}
+
+	.imgs2 {
+		/* align-content: space-between; */
+		justify-content: center;
+		text-align: center;
+		/* display: flex; */
+		/* flex-wrap: wrap; */
+	}
+
+
 </style>
 
 <script>
@@ -552,15 +660,17 @@
 		<div class="inner">
 			<nav>
 				<ul>
-					<img src='assets/css/images/images/cushing.jpg' style='border-radius: 50%;'>
+					<div style="object-fit: contain; max-width: 100% !important; max-height: 100% !important; min-width: 50px; margin-left: auto; aspect-ratio: 1 / 1;">
+					<img src='assets/css/images/headshot.png' style='border-radius: 100%; width: 100%; height: 100%; float: top; aspect-ratio: 1/1;'>
+					</div>
 					<li><a href="#intro">Welcome</a></li>
 					<li><a href="#one">Education</a></li>
 					<li><a href="#two">Experience</a></li>
-					<li><a href="#three">Skills</a></li>
+					<li><a href="#three">Tech Stack</a></li>
 					<li><a href="#four">Projects</a></li>
 					<li><a href="#five">Other Interests</a></li>
 					<!-- <li><a href="mailto: kxc4@cornell.edu">Contact</a></li> -->
-					<li><a href="assets/css/images/images/Resume.pdf">Resume</a></li>
+					<li><a href="assets/css/files/Resume.pdf">Resume</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -573,62 +683,187 @@
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<h1 style="font-family: Impact;">Kevin Cushing</h1>
-				<p>On this site, I provide a view into who I am in both a professional and personal sense.
-					Professionally, I am a student and a software engineer particularly interested in artificial intelligence
-					and distributed computing. Personally, I am an athlete and a sports fanatic.</p>
+				<p>
+					Hi, I'm Kevin! I am a master's student in Computer Science at
+					Northwestern with a passion for leveraging AI to address important
+					problems and make AI-driven insights accessible to all. My research
+					interests lie at the intersection of designing reliable AI models for
+					data-intensive tasks and using language models to effectively
+					communicate their insights to	non-technical audiences. When I'm not
+					immersed in research or coding projects, you'll find me on a golf
+					course trying to fix my slice.
+				</p>
 				<a href="https://github.com/kmcushing" class="git" style="text-decoration: none; border: 0 !important;"></a>
 				<a href="https://www.linkedin.com/in/kevin-cushing-844619179/" class="in"
 					style="text-decoration: none; border: 0 !important;"></a>
-				<a href="mailto: kxc4@cornell.edu" class="mail" style="text-decoration: none; border: 0 !important;"></a>
+				<a href="mailto: kxc4+website@cornell.edu" class="mail" style="text-decoration: none; border: 0 !important;"></a>
 			</div>
 		</section>
+
+		<!-- TODO: reformat dates -->
+		 <!-- TODO: proofread everything and improve written sections -->
 
 		<section id="one" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<h2 style="font-family: Impact;">Education</h2>
-				<img src='assets/css/images/images/cu.PNG' alt="Cornell" height="150" width="152" class="cu-image">
-				<h3 style="font-family: Oswald;">Cornell University</h3>
-				<p>Expected May 2022</p>
-				<p>Bachelor of Science in Computer Science</p>
-				<p>Minor in Mathematics</p>
+				
+				<!-- <div style="display: flex; height: fit-content; flex-wrap: nowrap;"> -->
+				<div class="img-txt-row">
+					<!-- <img src='assets/css/images/images/cu.PNG' alt="Cornell" height="150" width="152" class="cu-image"> -->
+					 <!-- <div height="100%"> -->
+						<!-- <div style="object-fit: contain; width: fit-content; padding: 3%;"> -->
+						<div class="img-txt-row-img">
+							<img src='assets/css/images/nu.png' alt="Northwestern" width="100%" class="nu-image" style="border-radius: 100%;">
+						</div>
+					<!-- <div style="display: block; padding: 3%; height: fit-content; border-top: 0; text-wrap: wrap;"> -->
+					<div class="img-txt-row-txt">
+						<h3 style="font-family: Oswald;">Northwestern University</h3>
+						<p>March 2025
+						<br> Master of Science in Computer Science
+						<!-- TODO: insert link when posted -->
+						<br> Thesis: <i>A Design and Implementation of a System for Fact Checking.</i>
+						<br> Advisor: Kristian J. Hammond
+					</p>
+					</div>
+				</div>
+
+				<!-- <div style="display: flex; height: fit-content; flex-wrap: nowrap;"> -->
+				<div class="img-txt-row">
+					<!-- <img src='assets/css/images/images/cu.PNG' alt="Cornell" height="150" width="152" class="cu-image"> -->
+					 <!-- <div style="object-fit: contain; width: fit-content; padding: 3%;"> -->
+					<div class="img-txt-row-img">
+						<!-- <img src='assets/css/images/images/cu.PNG' alt="Cornell" height="100%" width="100%" style="object-fit: contain;" class="cu-image"> -->
+						 <img src='assets/css/images/images/cu.PNG' alt="Cornell" width="100%" style="object-fit: contain; border-radius: 100%;" class="cu-image">
+					</div>
+					<!-- <div style="display: block; padding: 3%; height: fit-content; text-wrap: wrap;"> -->
+					<div class="img-txt-row-txt">
+						<h3 style="font-family: Oswald;">Cornell University</h3>
+						<p>May 2022
+						<br> Bachelor of Science in Computer Science
+						<br> <i>Magna Cum Laude</i>, with honors in Computer Science
+						<br> Minor in Mathematics</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section id="two" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<h2>Experience</h2>
-				<h3>MarketAxess</h3>
-				<p>June 2021-August 2021</p>
-				<p>I interned as an applications developer at MarketAxess, a FinTech firm that hosts a platform for trading
-					fixed income finacial instruments. While there, I worked on implementing price calculations and creating an
-					API for testing newly implemented or recently modified calculations.</p>
 
-				<div class="mktx-wrapper" style="width: 100%; text-align: center;">
-					<div class="mktx" style="overflow: hidden;">
-						<!-- <a href="https://github.com/kmcushing/Pitching-Performance-Modeling" -->
-						<!-- style="text-decoration: none; border: 0 !important;"> -->
-						<img src='assets/css/images/images/mktx.jpg' alt="MarketAxess" height="265" width="507" class="mktx-image">
-						<div class="mktx-text">Here is a picture compiled of me and my fellow interns (obviously we were working
-							remotely).
-						</div>
+				<h3 style="font-size: 1.35em;">Research</h3>
+
+				<div class="img-txt-row">
+					<div class="img-txt-row-img">
+						 <img src='assets/css/images/nu.png' alt="Northwestern University" width="100%" style="object-fit: contain; border-radius: 100%;" class="nu-image">
+					</div>
+					<div class="img-txt-row-txt">
+						<h3 style="font-family: Oswald;">Northwestern University, C3 Lab</h3>
+						<p>
+							January 2024 - Present
+							<br> I am currently working with the C3 Lab on a system for automatically
+							generating datasets consisting of natural language questions and 
+							corresponding SQL queries from databases covering a wide variety domains.
+							Our approach aims to enhance text-to-SQL models	by facilitating the
+							creation of robust in-domain datasets, allowing these models to more
+							accurately provide data-driven answers to questions posed by people
+							without knowledge of SQL and database design.
+						</p>
 					</div>
 				</div>
 
-				<p></p>
+				<div class="img-txt-row">
+					<div class="img-txt-row-img">
+						 <img src='assets/css/images/images/cu.PNG' alt="Cornell University" width="100%" style="object-fit: contain; border-radius: 100%;" class="cu-image">
+					</div>
+					<div class="img-txt-row-txt">
+						<h3 style="font-family: Oswald;">Cornell University, Udell Group</h3>
+						<!-- TODO: provide some background detail on covariate shift and active learning -->
+						<p>
+							September 2021 - May 2022
+							<br> I investigated covariate shift in ML and explored
+							how different active learning strategies can mitigate the detrimental
+							effects of data drift on the performance of ML models. With a small
+							group of researchers, I developed a general framework for comparing
+							active learning strategies on benchmark datasets for covariate shift.
+						</p>
+					</div>
+				</div>
 
-				<h3>Culibra Tech Solutions</h3>
+				<h3 style="font-size: 1.35em;">Industry</h3>
+				
+				<div class="img-txt-row">
+					<div class="img-txt-row-img">
+						 <img src='assets/css/images/somatus.jpeg' alt="Somatus" width="100%" style="object-fit: contain; border-radius: 100%;" class="somatus-image">
+					</div>
+					<div class="img-txt-row-txt">
+						<h3 style="font-family: Oswald;">Somatus</h3>
+						<p>
+							September 2022 - September 2023
+							<br> I worked as a data engineer at Somatus, a late-phase healthcare
+							startup focused on improving kidney care. I worked closely with
+							both the data engineering and ML teams to automate jobs for data
+							reporting and ML model training and inference, create CI/CD pipelines
+							to streamline testing and deployment, and integrate data from new
+							vendors to drive more timely care for patients.
+						</p>
+					</div>
+				</div>
+
+				<!-- <div style="display: flex; height: fit-content; width:100%; flex-wrap: nowrap;"> -->
+				<div class="img-txt-row">
+					<!-- <img src='assets/css/images/images/cu.PNG' alt="Cornell" height="150" width="152" class="cu-image"> -->
+					 <!-- <div style="object-fit: contain; width: 20%; float: left; padding: 3%;"> -->
+					<div class="img-txt-row-img">
+						<!-- <img src='assets/css/images/images/cu.PNG' alt="Cornell" height="100%" width="100%" style="object-fit: contain;" class="cu-image"> -->
+						 <img src='assets/css/images/mktx.png' alt="MarketAxess" width="100%" style="object-fit: contain; background-color: white; border-radius: 100%;" class="mktx-image">
+					</div>
+					<!-- <div style="display: block; padding: 3%; height: fit-content; width: 79%; float: right; text-wrap: wrap;"> -->
+					<div class="img-txt-row-txt">
+						<h3 style="font-family: Oswald;">MarketAxess</h3>
+						<p>June 2021 - August 2021
+						<br> I interned as an applications developer at MarketAxess, a FinTech firm that hosts a platform for trading
+						fixed income finacial instruments. While there, I worked on implementing price calculations and creating an
+						API for testing newly implemented or recently modified calculations.</p>
+					</div>
+				</div>
+
+				<!-- <p></p> -->
+
+				<!-- <div style="display: flex; height: fit-content; width:100%; flex-wrap: nowrap;"> -->
+				<div class="img-txt-row">
+					<!-- <img src='assets/css/images/images/cu.PNG' alt="Cornell" height="150" width="152" class="cu-image"> -->
+					 <!-- <div style="object-fit: contain; width: 20%; float:left; padding: 3%;"> -->
+						<div class="img-txt-row-img">
+						<!-- <img src='assets/css/images/images/cu.PNG' alt="Cornell" height="100%" width="100%" style="object-fit: contain;" class="cu-image"> -->
+						 <!-- <img src='' alt="Culibra" width="100%" style="object-fit: contain;" class="culibra-image"> -->
+					</div>
+					<!-- <div style="display: block; padding: 3%; height: fit-content; width: 79%; float: right; text-wrap: wrap;"> -->
+					<div class="img-txt-row-txt">
+						<h3 style="font-family: Oswald;">Culibra</h3>
+						<p>
+							August 2020 - January 2021
+							<br> I founded a company with 2 friends	and led our efforts to
+							develop an online platform for elementary school students and
+							teachers math games to play	interactive math games during the
+							COVID-19 pandemic.
+						</p>
+					</div>
+				</div>
+
+				<!-- <h3>Culibra Tech Solutions</h3>
 				<p>August 2020-January 2021</p>
 				<p>I founded a company with 2 friends to work on creating an online platform for math games for elementary
 					school students.</p>
-			</div>
+			</div> -->
 		</section>
 
 		<section id="three" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h2>Skills</h2>
-				<p>Languages: Python, Java/Spring Boot, C, C++, OCaml, MATLAB</p>
-				<p>Web: REST/Web Architecture, HTML, CSS, JS/Angular.js/Node.js/Express.js</p>
-				<p>Database: SQL, MongoDB</p>
+				<h2>Tech Stack</h2>
+				<p>Languages: Python, Java, SQL, C++, C, Lisp, OCaml, MATLAB
+				<br>Distributed Computing: Azure, AWS, Docker, Kubernetes, Spark, Databricks
+				<br>Web: REST APIs, Flask, Dash, HTML, CSS, JavaScript, Angular.js, Node.js, Express.js, Socket.io</p>
 			</div>
 		</section>
 
@@ -636,28 +871,67 @@
 	 color: black;">
 			<div class="inner">
 				<h2>Projects</h2>
-				<div class="gammon" style="overflow: hidden;">
+				<!-- TODO: add minerva, hagapp? -->
+				<div class="img-group">
+
+					<!-- TODO: link to thesis when available -->
+					<a class="factchecker">
+						<img class="factchecker-image" src="assets/css/images/factchecker.png" alt="Fact Checker">
+						<p class="factchecker-text">A system for fact checking any text against internet sources (my MS Thesis)</p>
+					</a>
+
+					<a class="backgammon" href="https://github.com/kmcushing/Backgammon">
+						<img class="backgammon-image" src="assets/css/images/images/gammon.png" alt="Backgammon Bot">
+						<p class="backgammon-text">A backgammon bot trained to play through reinforcement
+							learning</p>
+					</a>
+					
+					<a class="pitcher-modeling" href="https://github.com/kmcushing/Pitching-Performance-Modeling">
+						<img class="pitcher-modeling-image"
+							src="assets/css/images/baseball-pitcher.jpeg"
+							alt="Pitcher Performance Modeling">
+						<p class="pitcher-modeling-text">Predicting a pitcher's performance based on their pitch profiles</p>
+					</a>
+					
+					<a class="euchre" href="https://github.com/kmcushing/Euchre">
+						<img class="euchre-image" src="assets/css/images/images/EuchreSS.png" alt="Euchre">
+						<p class="euchre-text">A 4-player Euchre game in OCaml</p>
+					</a>
+					
+					<a class="covid" href="https://github.com/remani/Coronavirus">
+						<img class="covid-image" src="assets/css/images/images/CoronavirusAnalyticsSS.png" alt="Coronavirus Analytics">
+						<p class="covid-text">A Python application for
+							estimating and projecting the number of COVID-19 cases</p>
+					</a>
+
+				</div>
+				
+				<!-- old version -->
+				<!-- <div class="gammon" style="overflow: hidden;">
 					<a href="https://github.com/kmcushing/Backgammon" style="text-decoration: none; border: 0 !important;">
 						<img src="assets/css/images/images/gammon.png" alt="Backgammon Bot" height="265" width="350"
 							class="gammon-image">
 						<div class="gammon-text">A backgammon bot trained to play through reinforcement
 							learning.</div>
+					</a>
 				</div>
 
 				<div class="pitcher-prediction" style="overflow: hidden;">
 					<a href="https://github.com/kmcushing/Pitching-Performance-Modeling"
 						style="text-decoration: none; border: 0 !important;">
 						<img
-							src="https://camo.githubusercontent.com/add8a1149c884451c42cc1951e9f000ce3026d81fefea2c5bf956675116e631c/68747470733a2f2f7777772e746865626f7a686f2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032302f30392f446576696e57696c6c69616d732e676966"
-							alt="Backgammon Bot" height="265" width="350" class="pitcher-prediction-image">
+							src="assets/css/images/baseball-pitcher.jpeg"
+							alt="Pitcher Performance Modeling" height="265" class="pitcher-prediction-image">
 						<div class="pitcher-prediction-text">A project where multiple data-driven models were created to predict a
 							pitcher's performance.</div>
+					</a>
 				</div>
 
 				<div class="euchre" style="overflow: hidden;">
 					<a href="https://github.com/kmcushing/Euchre" style="text-decoration: none; border: 0 !important;">
 						<img src="assets/css/images/images/EuchreSS.png" alt="Euchre" height="265" class="euchre-image">
 						<div class="euchre-text">A 4-player Euchre game in OCaml</div>
+					</a>
 				</div>
 
 				<div class="coronavirusAnalytics" style="overflow: hidden;">
@@ -667,7 +941,8 @@
 							width="427" class="coronavirusAnalytics-image">
 						<div class="coronavirusAnalytics-text">A Python application for
 							estimating and projecting the number of COVID-19 cases.</div>
-				</div>
+						</a>
+				</div> -->
 				<!-- <h3>Images of projects with links to github</h3> -->
 			</div>
 		</section>
@@ -675,55 +950,74 @@
 		<section id="five" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<h2>Other Interests</h2>
-				<div class="pitching-1" style="overflow: hidden;">
-					<a href="https://cornellbigred.com/news/2022/4/2/walk-off-win-epic-comeback-spur-baseballs-sweep-of-yale.aspx"
-						style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/baseball2.JPG" alt="Baseball" height="265" width="398"
-							class="pitching-1-image">
-						<div class="pitching-1-text">Me pitching in a big win against Yale.</div>
+
+				<div class="imgs2">
+
+					<div class="golf-1" style="overflow: hidden;">
+						<img src="assets/css/images/golf.gif" alt="Golf" height="265" width="279"
+							class="golf-1-image">
+						<div class="golf-1-text">Hitting the green on a par 3 at The Ocean Course</div>
+					</div>
+
+					<div class="pitching-1" style="overflow: hidden;">
+						<a href="https://cornellbigred.com/news/2022/4/2/walk-off-win-epic-comeback-spur-baseballs-sweep-of-yale.aspx"
+							style="text-decoration: none; border: 0 !important;">
+							<img src="assets/css/images/images/baseball2.JPG" alt="Baseball" height="265" width="398"
+								class="pitching-1-image">
+							<div class="pitching-1-text">Pitching in a big win against Yale</div>
+						</a>
+					</div>
+
+					<div class="pitching-4" style="overflow: hidden;">
+						<a style="text-decoration: none; border: 0 !important;">
+							<img src="assets/css/images/images/baseball4.JPG" alt="Baseball" height="265" width="266"
+								class="pitching-4-image">
+							<div class="pitching-4-text">Hanging out with more teammates in the bullpen at South Carolina</div>
+						</a>
+					</div>
+
+					<div class="dog-2" style="overflow: hidden;">
+						<a style="text-decoration: none; border: 0 !important;">
+							<img src="assets/css/images/images/dog1.JPEG" alt="Rocky" height="265" width="493" class="dog-2-image">
+							<div class="dog-2-text">Taking Rocky for a swim in Bebe Lake</div>
+						</a>
+					</div>
+
+					<div class="pitching-3" style="overflow: hidden;">
+						<a href="https://cornellsun.com/2022/03/30/baseball-loses-in-first-ivy-game-at-hoy-field-in-3-years/"
+							style="text-decoration: none; border: 0 !important;">
+							<img src="assets/css/images/images/baseball3.JPG" alt="Baseball" height="265" width="398"
+								class="pitching-3-image">
+							<div class="pitching-3-text">Coming in to pitch against Harvard</div>
+						</a>
+					</div>
+
+					<div class="pitching-2" style="overflow: hidden;">
+						<a style="text-decoration: none; border: 0 !important;">
+							<img src="assets/css/images/images/baseball1.jpg" alt="Baseball" height="265" width="416"
+								class="pitching-2-image">
+							<div class="pitching-2-text">Another bullpen hangout</div>
+						</a>
+					</div>
+
+					<div class="bats-1" style="overflow: hidden;">
+						<a style="text-decoration: none; border: 0 !important;">
+							<img src="assets/css/images/images/bats1.JPG" alt="Baseball Bats" height="265" width="353"
+								class="bats-1-image">
+							<div class="bats-1-text">I used to make and sell baseball bats</div>
+						</a>
+					</div>
+
+					<div class="bats-2" style="overflow: hidden;">
+						<a style="text-decoration: none; border: 0 !important;">
+							<img src="assets/css/images/images/bats2.JPG" alt="Baseball Bats" height="265" width="353"
+								class="bats-2-image">
+							<div class="bats-2-text">I donated 5 bats to a local Babe Ruth League</div>
+						</a>
+					</div>
+
 				</div>
-				<div class="pitching-2" style="overflow: hidden;">
-					<a href="https://cornellbigred.com/sports/baseball/roster/kevin-cushing/66843"
-						style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/baseball1.jpg" alt="Baseball" height="265" width="416"
-							class="pitching-2-image">
-						<div class="pitching-2-text">Hanging out in the bullpen with my teammates freshman year.</div>
-				</div>
-				<div class="pitching-3" style="overflow: hidden;">
-					<a href="https://cornellsun.com/2022/03/30/baseball-loses-in-first-ivy-game-at-hoy-field-in-3-years/"
-						style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/baseball3.JPG" alt="Baseball" height="265" width="398"
-							class="pitching-3-image">
-						<div class="pitching-3-text">Me coming in to pitch in a game against Harvard.</div>
-				</div>
-				<div class="pitching-4" style="overflow: hidden;">
-					<a href="https://kevincushing.herokuapp.com" style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/baseball4.JPG" alt="Baseball" height="265" width="266"
-							class="pitching-4-image">
-						<div class="pitching-4-text">Hanging out with more teammates in the bullpen at South Carolina.</div>
-				</div>
-				<div class="bats-1" style="overflow: hidden;">
-					<a href="https://kevincushing.herokuapp.com" style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/bats1.JPG" alt="Baseball Bats" height="265" width="353"
-							class="bats-1-image">
-						<div class="bats-1-text">In high school, I made a business making and selling baseball bats.</div>
-				</div>
-				<div class="bats-2" style="overflow: hidden;">
-					<a href="https://kevincushing.herokuapp.com" style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/bats2.JPG" alt="Baseball Bats" height="265" width="353"
-							class="bats-2-image">
-						<div class="bats-2-text">I donated 5 bats to a local Babe Ruth League and Junior Legion Team.</div>
-				</div>
-				<div class="dog-1" style="overflow: hidden;">
-					<a href="https://kevincushing.herokuapp.com" style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/dog2.JPEG" alt="Rocky" height="265" width="243" class="dog-1-image">
-						<div class="dog-1-text">Taking my roommate's dog for a walk.</div>
-				</div>
-				<div class="dog-2" style="overflow: hidden;">
-					<a href="https://kevincushing.herokuapp.com" style="text-decoration: none; border: 0 !important;">
-						<img src="assets/css/images/images/dog1.JPEG" alt="Rocky" height="265" width="493" class="dog-2-image">
-						<div class="dog-2-text">Taking my roommate's dog to Bebe Lake.</div>
-				</div>
+				
 			</div>
 		</section>
 
@@ -895,7 +1189,8 @@
 			<div class="inner">
 				<ul class="menu">
 					<!-- <li>&copy; Untitled. All rights reserved.</li> -->
-					<li><a href="http://html5up.net">Design: HTML5 UP</a></li>
+					<!-- <li><a href="http://html5up.net">Design: HTML5 UP</a></li> -->
+					<p>This site uses a template designed by <a href="http://html5up.net">HTML5 UP</a> and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
 				</ul>
 			</div>
 		</footer>
