@@ -429,7 +429,7 @@
 	}
 
 	.dog-1 {
-		width: 243px;
+		width: 493px;
 		height: 265px;
 		display: inline-block;
 		margin: auto;
@@ -462,44 +462,6 @@
 	}
 
 	.dog-1:hover .dog-1-text {
-		opacity: 1;
-		pointer-events: none;
-	}
-
-	.dog-2 {
-		width: 493px;
-		height: 265px;
-		display: inline-block;
-		margin: auto;
-		position: relative;
-		/* pointer-events: none; */
-		text-decoration: none;
-		border: 0 !important;
-	}
-
-	.dog-2-image {
-		overflow: hidden !important;
-	}
-
-	.dog-2:hover .dog-2-image {
-		filter: blur(16px);
-		pointer-events: none;
-	}
-
-	.dog-2-text {
-		position: absolute;
-		opacity: 0;
-		top: 50%;
-		left: 50%;
-		text-align: center;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		color: white;
-		font-size: 24px;
-		padding: 1px 1px;
-	}
-
-	.dog-2:hover .dog-2-text {
 		opacity: 1;
 		pointer-events: none;
 	}
@@ -646,6 +608,29 @@
 		/* flex-wrap: wrap; */
 	}
 
+	.experience-item {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.experience-org {
+		font-family: Oswald;
+		float: left;
+	}
+
+	.experience-sep {
+		min-width: 20px;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.experience-dates {
+		font-family: Oswald;
+		margin-left: 0;
+		width: fit-content;
+	}
+
 
 </style>
 
@@ -669,7 +654,6 @@
 					<li><a href="#three">Tech Stack</a></li>
 					<li><a href="#four">Projects</a></li>
 					<li><a href="#five">Other Interests</a></li>
-					<!-- <li><a href="mailto: kxc4@cornell.edu">Contact</a></li> -->
 					<li><a href="assets/css/files/Resume.pdf">Resume</a></li>
 				</ul>
 			</nav>
@@ -684,14 +668,13 @@
 			<div class="inner">
 				<h1 style="font-family: Impact;">Kevin Cushing</h1>
 				<p>
-					Hi, I'm Kevin! I am a master's student in Computer Science at
-					Northwestern with a passion for leveraging AI to address important
-					problems and make AI-driven insights accessible to all. My research
-					interests lie at the intersection of designing reliable AI models for
-					data-intensive tasks and using language models to effectively
-					communicate their insights to	non-technical audiences. When I'm not
-					immersed in research or coding projects, you'll find me on a golf
-					course trying to fix my slice.
+					Hi, I'm Kevin! I'm a master's student in Computer Science at
+					Northwestern, passionate about leveraging AI to tackle meaningful
+					challenges. My research interests lie at the intersection of designing 
+					safe, reliable AI systems and utilizing language models to make
+					AI-driven insights accessible to non-technical audiences.
+					When I'm not immersed in research or coding projects, you'll likely
+					find me on a golf course, trying to fix my slice.
 				</p>
 				<a href="https://github.com/kmcushing" class="git" style="text-decoration: none; border: 0 !important;"></a>
 				<a href="https://www.linkedin.com/in/kevin-cushing-844619179/" class="in"
@@ -700,7 +683,6 @@
 			</div>
 		</section>
 
-		<!-- TODO: reformat dates -->
 		 <!-- TODO: proofread everything and improve written sections -->
 
 		<section id="one" class="wrapper style1 fullscreen fade-up">
@@ -717,9 +699,12 @@
 						</div>
 					<!-- <div style="display: block; padding: 3%; height: fit-content; border-top: 0; text-wrap: wrap;"> -->
 					<div class="img-txt-row-txt">
-						<h3 style="font-family: Oswald;">Northwestern University</h3>
-						<p>March 2025
-						<br> Master of Science in Computer Science
+						<div class="experience-item">
+							<h3 class="experience-org">Northwestern University</h3>
+							<div class="experience-sep"></div>
+							<h3 class="experience-dates">Expected March 2025</h3>
+						</div>
+						<p> Master of Science in Computer Science
 						<!-- TODO: insert link when posted -->
 						<br> Thesis: <i>A Design and Implementation of a System for Fact Checking.</i>
 						<br> Advisor: Kristian J. Hammond
@@ -737,9 +722,12 @@
 					</div>
 					<!-- <div style="display: block; padding: 3%; height: fit-content; text-wrap: wrap;"> -->
 					<div class="img-txt-row-txt">
-						<h3 style="font-family: Oswald;">Cornell University</h3>
-						<p>May 2022
-						<br> Bachelor of Science in Computer Science
+						<div class="experience-item">
+							<h3 class="experience-org">Cornell University</h3>
+							<div class="experience-sep"></div>
+							<h3 class="experience-dates">May 2022</h3>
+						</div>
+						<p> Bachelor of Science in Computer Science
 						<br> <i>Magna Cum Laude</i>, with honors in Computer Science
 						<br> Minor in Mathematics</p>
 					</div>
@@ -758,10 +746,13 @@
 						 <img src='assets/css/images/nu.png' alt="Northwestern University" width="100%" style="object-fit: contain; border-radius: 100%;" class="nu-image">
 					</div>
 					<div class="img-txt-row-txt">
-						<h3 style="font-family: Oswald;">Northwestern University, C3 Lab</h3>
-						<p>
-							January 2024 - Present
-							<br> I am currently working with the C3 Lab on a system for automatically
+						<div class="experience-item">
+							<h3 class="experience-org">Northwestern University, C3 Lab</h3>
+							<div class="experience-sep"></div>
+							<h3 class="experience-dates">January 2024 - Present</h3>
+						</div>
+						<!-- <h3 style="font-family: Oswald;">Northwestern University, C3 Lab</h3> -->
+						<p> I am currently working with the C3 Lab on a system for automatically
 							generating datasets consisting of natural language questions and 
 							corresponding SQL queries from databases covering a wide variety domains.
 							Our approach aims to enhance text-to-SQL models	by facilitating the
@@ -777,11 +768,14 @@
 						 <img src='assets/css/images/images/cu.PNG' alt="Cornell University" width="100%" style="object-fit: contain; border-radius: 100%;" class="cu-image">
 					</div>
 					<div class="img-txt-row-txt">
-						<h3 style="font-family: Oswald;">Cornell University, Udell Group</h3>
+						<div class="experience-item">
+							<h3 class="experience-org">Cornell University, Udell Group</h3>
+							<div class="experience-sep"></div>
+							<h3 class="experience-dates">September 2021 - May 2022</h3>
+						</div>
+						<!-- <h3 style="font-family: Oswald;">Cornell University, Udell Group</h3> -->
 						<!-- TODO: provide some background detail on covariate shift and active learning -->
-						<p>
-							September 2021 - May 2022
-							<br> I investigated covariate shift in ML and explored
+						<p> I investigated covariate shift in ML and explored
 							how different active learning strategies can mitigate the detrimental
 							effects of data drift on the performance of ML models. With a small
 							group of researchers, I developed a general framework for comparing
@@ -797,11 +791,14 @@
 						 <img src='assets/css/images/somatus.jpeg' alt="Somatus" width="100%" style="object-fit: contain; border-radius: 100%;" class="somatus-image">
 					</div>
 					<div class="img-txt-row-txt">
-						<h3 style="font-family: Oswald;">Somatus</h3>
-						<p>
-							September 2022 - September 2023
-							<br> I worked as a data engineer at Somatus, a late-phase healthcare
-							startup focused on improving kidney care. I worked closely with
+						<div class="experience-item">
+							<h3 class="experience-org">Somatus</h3>
+							<div class="experience-sep"></div>
+							<h3 class="experience-dates">September 2022 - September 2023</h3>
+						</div>
+						<!-- <h3 style="font-family: Oswald;">Somatus</h3> -->
+						<p> I worked as a data engineer at Somatus, a late-phase healthcare
+							startup focused on improving kidney care. I collaborated closely with
 							both the data engineering and ML teams to automate jobs for data
 							reporting and ML model training and inference, create CI/CD pipelines
 							to streamline testing and deployment, and integrate data from new
@@ -820,11 +817,16 @@
 					</div>
 					<!-- <div style="display: block; padding: 3%; height: fit-content; width: 79%; float: right; text-wrap: wrap;"> -->
 					<div class="img-txt-row-txt">
-						<h3 style="font-family: Oswald;">MarketAxess</h3>
-						<p>June 2021 - August 2021
-						<br> I interned as an applications developer at MarketAxess, a FinTech firm that hosts a platform for trading
-						fixed income finacial instruments. While there, I worked on implementing price calculations and creating an
-						API for testing newly implemented or recently modified calculations.</p>
+						<div class="experience-item">
+							<h3 class="experience-org">MarketAxess</h3>
+							<div class="experience-sep"></div>
+							<h3 class="experience-dates">June - August 2021</h3>
+						</div>
+						<!-- <h3 style="font-family: Oswald;">MarketAxess</h3> -->
+						<p> I interned as an applications developer at MarketAxess, a FinTech
+							firm that hosts a platform for trading fixed income finace instruments.
+							While there, I implemented price calculations to support new types of bonds
+							and created an API to simplify testing price calculations.</p>
 					</div>
 				</div>
 
@@ -840,13 +842,15 @@
 					</div>
 					<!-- <div style="display: block; padding: 3%; height: fit-content; width: 79%; float: right; text-wrap: wrap;"> -->
 					<div class="img-txt-row-txt">
-						<h3 style="font-family: Oswald;">Culibra</h3>
-						<p>
-							August 2020 - January 2021
-							<br> I founded a company with 2 friends	and led our efforts to
+						<div class="experience-item">
+							<h3 class="experience-org">Culibra</h3>
+							<div class="experience-sep"></div>
+							<h3 class="experience-dates">August 2022 - January 2021</h3>
+						</div>
+						<!-- <h3 style="font-family: Oswald;">Culibra</h3> -->
+						<p> I founded a company with two friends from college and led our efforts to
 							develop an online platform for elementary school students and
-							teachers math games to play	interactive math games during the
-							COVID-19 pandemic.
+							teachers to play interactive math games during the COVID-19 pandemic.
 						</p>
 					</div>
 				</div>
@@ -863,7 +867,7 @@
 				<h2>Tech Stack</h2>
 				<p>Languages: Python, Java, SQL, C++, C, Lisp, OCaml, MATLAB
 				<br>Distributed Computing: Azure, AWS, Docker, Kubernetes, Spark, Databricks
-				<br>Web: REST APIs, Flask, Dash, HTML, CSS, JavaScript, Angular.js, Node.js, Express.js, Socket.io</p>
+				<br>Web: REST APIs, Flask, Dash, JavaScript, HTML, CSS,, Angular.js, Node.js, Express.js, Socket.io</p>
 			</div>
 		</section>
 
@@ -976,10 +980,10 @@
 						</a>
 					</div>
 
-					<div class="dog-2" style="overflow: hidden;">
+					<div class="dog-1" style="overflow: hidden;">
 						<a style="text-decoration: none; border: 0 !important;">
-							<img src="assets/css/images/images/dog1.JPEG" alt="Rocky" height="265" width="493" class="dog-2-image">
-							<div class="dog-2-text">Taking Rocky for a swim in Bebe Lake</div>
+							<img src="assets/css/images/images/dog1.JPEG" alt="Rocky" height="265" width="493" class="dog-1-image">
+							<div class="dog-1-text">Taking Rocky for a swim in Bebe Lake</div>
 						</a>
 					</div>
 
